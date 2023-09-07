@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio website</title>
+        <link rel="stylesheet" href="pot.css">
+        <script src="https://kit.fontawesome.com/02da168638.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+       <div id="header">
+           <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#content">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>Intern</p>
+                <h1 class="subtitle">Hi Im <span>Fardeen </span><br>from SSN College
+                </h1>
+            </div>
+           </div>
+       </div> 
+       <!-------about---->
+       <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="portimg.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About me</h1>
+                        <p> Hey Im an ECE undergrad looking to exploce the tech world kinda shit .Hire me plisss, no money , no food</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')"> Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')"> Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web development</span><br>jussss learnin</li>
+                                <li><span>Problem Solving</span><br>okayishhh</li>
+                                <li><span>C++,Python</span><br>mediocre</li> 
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>No internship 1</span><br>broke</li>
+                                <li><span>No internship 2</span><br>broke</li>
+                                <li><span>No internship 3</span><br>broke</li> 
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>BE-ECE (2021-2025)</span><br>Ssn College of Engineering</li>
+                                <li><span>12th (2020-2021)</span><br>Spartan Matric HSS</li>
+                                <li><span>10th (2019-2020)</span><br>Spartan Matric HSS</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+       <!-----services--->
+       <div id="services">
+            <div class="container">
+                <h1 class="subtitle">My Services</h1>
+                <div class="services-list">
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h2>Web design</h2>
+                            <p> Amazing web design will be done samosa kachori saani anol</p>
+                            <a href="#">learn more</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-crop"></i>
+                            <h2>App dev</h2>
+                            <p> Amazing web design will be done samosa kachori saani anol</p>
+                            <a href="#">learn more</a>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-apple"></i>
+                            <h2>UI/Ux</h2>
+                            <p> Amazing web design will be done samosa kachori saani anol</p>
+                            <a href="#">learn more</a>
+                        </div>
+                </div>
+            </div>
+
+       </div>
+       <!-----portfolio--->
+       <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="i1.png" >
+                    <div class="layer">
+                        <h3>Iphone 12</h3>
+                            <p>This Iphone is similar to iphone 11 with a little changes with notch size and battery life</p>
+                            <a href="#" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="i4.png" >
+                    <div class="layer">
+                        <h3>Iphone 13</h3>
+                                <p>This Iphone is similar to iphone 12 with a little changes with notch size and battery life</p>
+                                <a href="#" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="i3.png" >
+                    <div class="layer">
+                        <h3>Iphone 14</h3>
+                                <p>notch is replaced with floating island camera</p>
+                                <a href="#" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+       </div>
+
+       <div id="content">
+        <div class="container">
+            <div class="row">
+                <div class="contactleft">
+                    <hi class ="subtitle">Contact Me</hi>
+                    <p><i class="fa-solid fa-paper-plane"></i>fardu2003@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>123456789</p>
+                    <div class="socialicons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""></i><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""></i><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Final.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contactright">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">Hello</span>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright Fardeen made with <i class="fa-solid fa-heart"> </i>and others</p>
+        </div>
+       </div>
+
+
+
+
+       <script>
+            var tablinks=document.getElementsByClassName("tab-links");
+            var tabcontents=document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove('active-link');
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+       </script>
+       <script>
+            var sidemneu=document.getElementById("sidemenu")
+            function openmenu(){
+                sidemenu.style.right="0";
+            }
+            function closemenu(){
+                sidemenu.style.right="-210px";
+            }
+
+       </script>
+       <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxS5YB9jPvFQRv0fx6WYPmoEFRuZFsoH_lAsJAgcm6CNvZumNcITJvelro8X-EeLV3d/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML= ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    </body>
+</html>
